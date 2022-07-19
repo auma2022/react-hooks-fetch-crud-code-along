@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 /*
  This function returns a function.
 2. This function returns a <header> element with a heading and a button.
@@ -11,7 +11,22 @@ import React from "react";
 9. The `onDarkModeClick` callback is passed through to the Header component.
 10. The Header component receives that function and stores it as a prop.
 11. The `isDarkMode` prop is updated automatically based on the state of the app's root store.
+*
+function Header({ isDarkMode, onDarkModeClick }) {
+  return (
+    <header>
+      <h2>Shopster</h2>
+      <button onClick={onDarkModeClick}>
+        {isDarkMode ? "Dark" : "Light"} Mode
+      </button>
+    </header>
+  );
+}
+
+export default Header;
 */
+import React from "react";
+
 function Header({ isDarkMode, onDarkModeClick }) {
   return (
     <header>
